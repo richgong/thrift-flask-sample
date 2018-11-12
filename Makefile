@@ -10,9 +10,6 @@ run-python: FORCE
 	echo "Running python service"
 	./env/bin/python application.py
 
-run-php: FORCE
-	php application.php
-
 thrift: FORCE
 	thrift -version
 	thrift -r --gen py geometry.thrift
